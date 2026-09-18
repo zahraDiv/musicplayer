@@ -1,0 +1,55 @@
+@import "tailwindcss";  
+
+/* ///مخفی کردن نوار اسکرول /// */
+        .scrollbar-hide {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+
+       /* ///////// لایک و سرچ ////////// */
+        .music-page {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 230px;
+            z-index: 50;
+            overflow-y: auto;
+            padding: 24px;
+            padding-bottom: 130px;
+            border-left: 1px solid rgba(168, 85, 247, 0.2);
+            background: rgba(13, 14, 28, 0.95);
+            box-shadow: 0 0 40px rgba(59, 7, 100, 0.2);
+            backdrop-filter: blur(18px);
+            overscroll-behavior: contain;
+        }
+
+
+        /* ////مخفی کردن اسکرول‌بار ولی حفظ قابلیت اسکرول ///////// */
+        .hide-scrollbar {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+
+       /* //////حالت موبایل ///////// */
+        @media (max-width: 1023px) {
+
+            .music-page {
+                top: 64px;
+                left: 0;
+                padding: 20px;
+                padding-bottom: 120px;
+                border-left: 0;
+            }
+
+        }
